@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boa Noite — Especial Diferenciado 💜</title>
+
+  <style>
+    :root{
+      --r1:#120022;
+      --r2:#3d0470;
+      --r3:#b37dff;
+      --r4:#e6d4ff;
+      --txt:#f7ecff;
+    }
+
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:radial-gradient(circle at top,var(--r3),var(--r2) 40%,var(--r1));
+      color:var(--txt);
+      padding:25px;
+      overflow-x:hidden;
+      animation:fadeIn 1.4s ease;
+    }
+
+    @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+
+    /* brilho pulsante suave */
+    .pulse-light{
+      position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+      width:420px;height:420px;
+      background:radial-gradient(circle,var(--r3),transparent 60%);
+      filter:blur(80px);
+      opacity:.45;
+      animation:pulse 6s ease-in-out infinite;
+      pointer-events:none;
+    }
+
+    @keyframes pulse{
+      0%,100%{opacity:.4;} 50%{opacity:.7;}
+    }
+
+    .container{max-width:650px;margin:auto;text-align:center;position:relative;z-index:3;}
+
+    h1{
+      font-size:2.6em;margin-bottom:20px;
+      text-shadow:0 0 16px var(--r3);
+      animation:slideDown 1.4s ease;
+    }
+
+    @keyframes slideDown{from{transform:translateY(-40px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+
+    /* primeira letra destacada */
+    .texto::first-letter{
+      font-size:78px; font-weight:700; float:left; margin-right:8px;
+      line-height:.7; color:transparent;
+      background:linear-gradient(180deg,#ffffffcc,#ffffff22);
+      -webkit-background-clip:text;
+      -webkit-text-stroke:1px #ffffff55;
+    }
+
+    .texto{font-size:1.28em;line-height:1.85;margin-top:25px;}
+
+    /* cartão dobrável */
+    .flip-card{
+      margin-top:40px;
+      perspective:1000px;
+      animation:fadeIn 2s ease;
+    }
+
+    .flip-inner{
+      width:100%;height:240px;
+      transition:transform 0.8s;
+      transform-style:preserve-3d;
+      cursor:pointer;
+    }
+
+    .flip-card:hover .flip-inner{transform:rotateY(180deg);}
+
+    .face{
+      position:absolute;top:0;left:0;width:100%;height:100%;
+      backface-visibility:hidden;
+      border-radius:18px;
+      display:flex;align-items:center;justify-content:center;
+      padding:20px;
+      background:rgba(255,255,255,0.08);
+      box-shadow:0 0 18px rgba(0,0,0,0.35);
+      backdrop-filter:blur(6px);
+    }
+
+    .face.back{
+      transform:rotateY(180deg);
+      font-size:1.18em;line-height:1.6;
+    }
+
+    /* linha poética lateral */
+    .vertical-frase{
+      position:fixed;left:12px;top:50%;transform:translateY(-50%);
+      writing-mode:vertical-rl;
+      font-size:1em;opacity:.55;
+      letter-spacing:2px;
+      animation:fadeIn 2.5s ease;
+    }
+
+    /* efeito de constelação */
+    .constela{
+      margin-top:40px;
+      padding:20px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.06);
+      backdrop-filter:blur(6px);
+      box-shadow:0 0 18px rgba(0,0,0,0.3);
+    }
+
+    .estrela{
+      display:inline-block;
+      font-size:1.3em;
+      margin:4px;
+      animation:brilha 2s infinite ease-in-out alternate;
+    }
+
+    @keyframes brilha{
+      from{opacity:.4;transform:scale(1);} to{opacity:1;transform:scale(1.3);}
+    }
+
+    footer{text-align:center;margin-top:40px;opacity:.75;}
+  </style>
+</head>
+<body>
+
+  <div class="pulse-light"></div>
+  <div class="vertical-frase">você ilumina tudo ao seu redor ✨</div>
+
+  <div class="container">
+    <h1>Boa Noite, Meu Amor 💜</h1>
+
+    <p class="texto">
+      Amor, hoje eu queria falar brevemente da sua capacidade de me fazer feliz somente com a sua presença. Vc consegue me deixar feliz com toda ligação, com todos os segundos de conversa, com cada foto que vc me manda, cada detalhe que por menor que seja, consegue me fazer feliz de uma maneira inacreditável. Dorme bem meu amor, Deus te proteja, até amanhã, bjs bjsss, EU TE AMO!
+    </p>
+
+    <!-- CARTÃO DIFERENCIADO -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="face front">
+          <p style="font-size:1.22em;opacity:.85;">💌 Toque para abrir</p>
+        </div>
+        <div class="face back">
+            <p style="margin:0; font-size: medium;">Eu acho que Deus exagerou quando desenhou vc. Ele colocou perfeição demais, beleza demais, TUDO demais… Vc é literalmente tudo que eu sempre sonhei, por mais que vc possa duvidar um pouco disso. Vc é maravilhosa em muita coisa amor, e isso eu não digo apenas por beleza, também por personalidade, admiro muito vc, acho que vc sabe que sou seu fã né KKSAKAKKASKAS. 
+            EU TE AMO AMOR!💜
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+
+    <!-- CONSTELAÇÃO DE ELOGIOS -->
+    <div class="constela">
+       <p style="font-size:1.15em;opacity:.85;margin-bottom:10px;">✨ Coisas que amo em você (TUDO)</p>
+       <span class="estrela">⭐ Seu sorriso</span>
+      <span class="estrela">⭐ Seu jeito ÚNICOOO</span>
+      <span class="estrela">⭐ Sua voz doce</span>
+      <span class="estrela">⭐ Seu abraço</span>
+      <span class="estrela">⭐ SEU CABELO </span>
+      <span class="estrela">⭐ Seus olhos</span>
+    </div>
+
+      <footer>Feito com carinho, para minha princesa 💜</footer>
+  </div>
+
+  <script>
+    // efeito: partículas seguindo o mouse
+    const particles = [];
+    const colors = ['#b37dff','#d8c1ff','#ffffffaa'];
+
+    // parallax com mouse
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      pulse.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    });
+
+    // parallax com toque no celular
+    document.addEventListener('touchmove', (e) => {
+      const touch = e.touches[0];
+      const x = (touch.clientX / window.innerWidth - 0.5) * 20;
+      const y = (touch.clientY / window.innerHeight - 0.5) * 20;
+      pulse.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    }, { passive: true });
+      p.classList.add('trail');
+      document.body.appendChild(p);
+
+      const size = Math.random() * 10 + 6;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.left = e.pageX - size/2 + 'px';
+      p.style.top = e.pageY - size/2 + 'px';
+      p.style.background = colors[Math.floor(Math.random()*colors.length)];
+
+      particles.push(p);
+
+      setTimeout(() => {
+        p.style.opacity = 0;
+        p.style.transform = 'scale(0.3)';
+      }, 50);
+
+      setTimeout(() => {
+        p.remove();
+      }, 600);
+    });
+  </script>
+
+  <style>
+    .trail{
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      transition: 0.5s ease;
+      filter: blur(4px);
+      z-index: 999;
+    }
+  </style>
+  <script>
+    // Parallax suave no fundo luminoso
+    const pulse = document.querySelector('.pulse-light');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      pulse.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+    });
+  </script>
+  <script>
+    // Efeito: toques viram corações que sobem 💜
+    document.addEventListener('click', spawnSymbol);
+    document.addEventListener('touchstart', spawnSymbol);
+
+    function spawnSymbol(e){
+      const x = e.touches ? e.touches[0].pageX : e.pageX;
+      const y = e.touches ? e.touches[0].pageY : e.pageY;
+
+      const heart = document.createElement('div');
+      const symbols = ['💜','✨'];
+      heart.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+      heart.style.position = 'absolute';
+      heart.style.left = x + 'px';
+      heart.style.top = y + 'px';
+      heart.style.fontSize = (22 + Math.random() * 18) + 'px';
+      heart.style.opacity = 1;
+      heart.style.transition = 'transform 1.4s ease, opacity 1.4s ease';
+      heart.style.pointerEvents = 'none';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.style.transform = 'translateY(-90px) scale(1.4)';
+        heart.style.opacity = 0;
+      }, 10);
+
+      setTimeout(() => heart.remove(), 1500);
+    }(), 1500);
+    });
+  </script>
+</body>
+</html>
